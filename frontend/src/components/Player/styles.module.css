@@ -1,0 +1,53 @@
+.container {
+    @apply
+    flex flex-col items-center
+}
+
+.content-player {
+    @apply
+    flex items-center flex-col relative z-0
+    h-[450px] w-full
+    mt-2 mb-2
+    border rounded-lg border-cyan-500 
+    shadow-xl bg-slate-200
+}
+
+.description-cam {
+    @apply
+    text-base font-bold
+}
+
+@media (min-width: 640px) {
+    .content-player{
+        @apply
+        h-[420px] 
+    }
+}
+
+@media (min-width: 768px) {
+    .content-player{
+        @apply
+        h-[480px]
+    }
+}
+
+@media (min-width: 960px) {
+    .content-player{
+        @apply
+        h-[480px]
+    }
+}
+
+@media (min-width: 1200px) {
+    .content-player{
+        @apply
+        h-[480px]
+    }
+}
+
+@media (min-width: 1536px) {
+    .content-player{
+        @apply
+        h-[480px] w-[850px]
+    }
+}

@@ -1,0 +1,10 @@
+.icon {
+    @apply
+    text-white
+    transition ease-in-out delay-150 duration-300
+}
+
+.icon:hover {
+    @apply
+    text-slate-300 scale-95
+}

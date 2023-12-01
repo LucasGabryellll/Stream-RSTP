@@ -1,0 +1,30 @@
+.container-player {
+    @apply
+    flex w-full h-full absolute z-[10] 
+    items-end rounded-lg
+}
+
+.content {
+    @apply
+    flex h-9 w-full bg-black justify-between pl-3 pr-3
+}
+
+.content-player:hover {
+    @apply
+    cursor-pointer
+}
+
+.content-icons {
+    @apply
+    flex items-center gap-2
+}
+
+.content-in-live {
+    @apply
+    flex items-center justify-center gap-2 text-white text-[14px] ml-2
+}
+
+.div-rec {
+    @apply
+    h-2 w-2 rounded-[50%] bg-red-600 animate-pulse
+}

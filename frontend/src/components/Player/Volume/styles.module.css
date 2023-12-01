@@ -1,0 +1,21 @@
+.content-volume {
+    @apply 
+    flex
+    items-center justify-center gap-1
+}
+
+.icon-volume {
+    @apply
+    h-6 w-6
+}
+
+.content-volume:hover .slider {
+   @apply
+   block 
+}
+
+.slider {
+    @apply
+    cursor-pointer hidden h-2
+    transition ease-in-out delay-150 duration-300
+}

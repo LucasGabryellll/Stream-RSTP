@@ -1,0 +1,4 @@
+.container-main {
+    @apply
+    flex min-h-screen flex-col items-center p-4 relative
+}

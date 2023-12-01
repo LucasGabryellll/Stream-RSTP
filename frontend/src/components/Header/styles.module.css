@@ -1,0 +1,35 @@
+.container-header {
+    @apply flex justify-center h-20 w-full rounded-2xl text-white relative
+}
+
+.text-page {
+    @apply
+    font-extrabold text-transparent 
+    text-xl bg-clip-text bg-gradient-to-r from-slate-100 to-slate-50
+}
+
+.content-gradient {
+    @apply bg-gradient-to-r from-color-primary-gradient to-color-secundary-gradient
+}
+
+.content-information {
+    @apply flex flex-col items-center justify-center
+}
+
+.text-entity {
+    @apply font-medium mb-2 text-[12px]
+}
+
+.text-cnpj {
+    @apply text-sm font-bold text-[12px]
+}
+
+@media (min-width: 640px) {
+    .text-entity {
+        @apply text-[16px]
+    }
+
+    .text-cnpj {
+        @apply text-[18px]
+    }
+}

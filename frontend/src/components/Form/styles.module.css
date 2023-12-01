@@ -1,0 +1,69 @@
+
+.content-form {
+    @apply
+    flex flex-col items-center bg-stone-50 h-[50%] w-[90%] 
+    rounded-lg border-[2px] border-cyan-500 pl-6 pr-6
+    shadow-lg shadow-primary text-slate-600 font-bold relative
+}
+
+.logo {
+    @apply
+    flex flex-row gap-1 items-center mb-8 mt-4
+}
+
+.content-input {
+    @apply
+    mb-6 w-full
+}
+
+.icon-input {
+    @apply
+    flex flex-row items-center border-2 pl-2
+}
+
+.input {
+    @apply
+    text-black h-10 w-full pl-4 outline-none
+}
+
+.icon-eye-pass {
+    @apply
+    absolute h-6 mr-3 right-0 cursor-pointer
+}
+
+.button {
+    @apply
+    rounded-[10px] bg-gradient-to-r from-cyan-500 to-blue-500 w-full p-4 mt-4 text-white
+    transition ease-in-out delay-150 duration-300
+}
+
+.button:hover {
+    @apply
+    scale-90
+}
+
+.erros {
+    @apply 
+    mt-2 text-error text-sm font-medium
+}
+  
+@media (min-width: 768px) {
+    .content-form {
+        @apply
+        w-[40%]
+    }
+}
+
+@media (min-width: 960px) {
+    .content-form {
+        @apply
+        h-[70%] w-[30%]
+    }
+}
+
+@media (min-width: 1536px) {
+    .content-form {
+        @apply
+        h-[60%] w-[22%]
+    }
+}

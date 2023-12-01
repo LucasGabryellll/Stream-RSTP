@@ -1,0 +1,24 @@
+.icon {
+    @apply transition ease-in-out delay-150 duration-300
+    z-50 absolute 
+     top-[40%]
+}
+
+.icon:hover {
+    @apply animate-pulse cursor-pointer
+}
+
+.animate-pulse {
+    animation: pulseIcon 2s infinite;
+}
+
+@keyframes pulseIcon {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}

@@ -1,0 +1,34 @@
+.container-modal {
+    @apply
+    fixed top-0 right-0 left-0 bottom-0 z-[1000]
+    backdrop-blur-sm
+  
+  }
+  
+  .content-modal {
+    @apply
+    fixed top-[50%] left-[50%] 
+    translate-x-[-50%] translate-y-[-50%] bg-[#FFF]  
+    min-h-[140px] min-w-[300px] max-w-[500px] rounded-xl p-2 border-2 border-gray-500
+    shadow-lg
+  }
+  
+  .container {
+    @apply
+    flex flex-col items-center
+    h-full w-full
+    text-gray-500 font-semibold
+  }
+  
+  .content-buttons {
+    @apply
+    flex w-full mt-[15%]
+    items-center justify-evenly
+  }
+  
+  .button {
+    @apply
+    flex items-center justify-center
+    font-light text-white
+    h-9 p-3 rounded
+  }

@@ -1,0 +1,44 @@
+const streams = [
+ {
+    id: 1,
+    description: "ANIMES",
+    url:"https://stmv1.srvif.com/animetv/animetv/playlist.m3u8?ManoTV"
+  },
+  {
+    id: 2,
+    description: "ANIMES",
+    url:"https://stmv1.srvif.com/otaku/otaku/chunklist_w776677652.m3u8"
+  },
+  {
+    id: 3,
+    description: "TNT FILMES",
+    url:"https://cdn-1.nxplay.com.br/TNT_TK//tracks-v1a1/mono.m3u8"
+  },
+  {
+    id: 4,
+    description: "PARAMOUNT HD",
+    url:"http://cdn2.connectbr.com.br/paramount/tracks-v1a1/mono.m3u8?ManoTV"
+  },
+  {
+    id: 5,
+    description: "SPORTS",
+    url:"https://glxlmn026c.singularcdn.net.br/playout_01/playlist-480p.m3u8?ManoTV"
+  },
+  {
+    id: 6,
+    description: "ESPN HD",
+    url:"http://142.54.163.202:80/premium79/tracks-v1a1/mono.m3u8"
+  },
+  {
+    id: 7,
+    description: "SERIES AO VIVO",
+    url:"http://cdn.connectbr.com.br/Bora_Filmes/tracks-v1a1/mono.m3u8?ManoTV"
+  },
+  {
+    id: 8,
+    description: "SERIE LOKI TEMP 1 - EP2",
+    url:"http://shd2.mflixhd.xyz/sfgfe34ew32r/SHD2/84958/1x2.mp4S"
+  },
+]
+
+export { streams };

@@ -1,0 +1,6 @@
+.container {
+    @apply
+    flex items-center justify-center h-screen w-full
+    bg-gradient-to-br from-slate-100 from-5% 
+    via-sky-500 via-30% to-gray-900 to-90%
+}
