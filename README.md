@@ -123,26 +123,3 @@ O frontend será iniciado em `http://localhost:3000`
 Este projeto está licenciado sob a licença **MIT**.
 
 🚀 Desenvolvido com 💙 e código!
-=======
-# Sistema de transmissão de video RSTP
-
-## 💻 Visualização de Stream
-
-## 💭 Sobre o projeto:
- - A aplicação faz converte dados que são capturados de uma transmissão RSTP e transforma os dados em .m3u8 que são servidor para o frontend exibir em um navegador visto que
- - O navegador não suporta tipos de arquivos RSTP.
-
-## 🚀 Ferramentas e Tecnologías:
- - Backend:
-   - Node.
-   - Express.
-   - FFMPeg.
-   - Typescript.
- - Frontend:
-   - Next JS.
-   - React JS.
-   - Typescript.
-     
-## 🎓 Autor:
- - Lucas Gabryel Monteiro de Lima
->>>>>>> 493558a6b13f3b99e9a2dd7bbb06da7548491d6d
