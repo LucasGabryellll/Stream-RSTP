@@ -9,16 +9,23 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'bg-home': "url('/bg-home.svg')"
       },
       colors: {
         primary: '#0a0a0a',
         accent: '#B809C3',
         error: '#FF0000',
+        background: '#1B1827',
+        card: '#2A2837',
+        'card-focus-to': '#454255',
+        'card-focus-from': '#2D2B3C',
         'color-primary-gradient': 'rgba(51, 134, 142, 1)',
         'color-secundary-gradient': 'rgba(0, 166, 182, 1)',
+        'text-primary': '#F1F1F1',
+        'text-secondary':'#ECECEC',
+        'text-muted': '#787586',
+        'color-primary': '#2A2837',
+        border: '#8D8D8D'
       }
     },
     

@@ -5,31 +5,23 @@ import fs from "fs";
 const sendStream = async (req: Request, res: Response) => {
     try {
         const inputString = req.url;
-        const parts = inputString.split('/'); // Divide a string usando '/' como delimitador
-        const arquive = parts[parts.length - 1]; // Pega o último elemento do array
-        const cam = parts[2]; // Pega a pasta da camera
+        const parts = inputString.split('/');
+        const arquive = parts[parts.length - 1];
+        const cam = parts[2];
 
         var filePath = `./video/${cam}/` + arquive;
 
-        fs.readFile(filePath, (error, data) => {
-            res.writeHead(200, { 'Access-Control-Allow-Origin': '*' });
-            if (error) {
-                if (error.code == 'ENOENT') {
-                    res.end("Error")
-                }
+        // Verifica se o arquivo existe antes de tentar abri-lo
+        if (!fs.existsSync(filePath)) {
+            return res.status(404).send('Arquivo não encontrado');
+        }
 
-                else {
-                    res.writeHead(500);
-                    res.end('Sorry, check with the site admin for error: ' + error.code + ' ..\n');
-                    res.end();
-                }
-            }
-
-            else {
-                res.end(data, 'utf8');
-            }
-        });
-
+        // Define os cabeçalhos de conteúdo correto
+        res.setHeader('Content-Type', 'application/vnd.apple.mpegurl');
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        
+        // Lê o arquivo .m3u8 e envia para o cliente
+        fs.createReadStream(filePath).pipe(res);
     } catch (error) {
         return res.status(500).json({ message: "Erro ao abrir video." });
     }

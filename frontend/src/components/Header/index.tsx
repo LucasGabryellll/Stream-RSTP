@@ -1,16 +1,35 @@
-import { ButtonLogout } from "../ButtonLogout";
+import { ReactNode } from "react";
+import { Logo } from "../Logo";
+import { Search } from "../Search";
+
 import styles from "./styles.module.css";
 
-export function Header() {
+type Props = {
+  children?: ReactNode
+}
+
+export function Header({ children }: Props) {
   return (
-    <div
-      className={`${styles['container-header']} ${styles['content-gradient']}`}
-    >
-      <div className={styles['content-information']}>
-        <p className={styles['text-page']}>CAMERAS IN LIVE</p>
-        
-        <ButtonLogout />
+    <header className={styles.content}>
+      <div className={styles['content-option']}>
+        <Logo />
+
+        <div className={styles.filters}>
+          <button className={styles['description-filter']}>
+            <p>Ao Vivo</p>
+          </button>
+
+          <button className={styles['description-filter']}>
+            <p>Câmeras</p>
+          </button>
+
+          <button className={styles['description-filter']}>
+            <p>Série</p>
+          </button>
+        </div>
       </div>
-    </div>
+
+      <Search />
+    </header>
   );
 }

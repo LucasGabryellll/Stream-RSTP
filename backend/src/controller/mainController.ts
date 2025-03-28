@@ -24,7 +24,6 @@ io.on('connection', (socket) => {
     sendM3U8();
 
     socket.on('disconnect', () => {
-        // Encerre o intervalo quando o cliente se desconectar
         console.log(`Cliente desconectado: ${socket.id}`);
     });
 });

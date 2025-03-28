@@ -1,0 +1,20 @@
+.content-search {
+  @apply
+  flex items-center flex-row
+  h-10 px-3 gap-5
+  border border-border rounded-3xl 
+  bg-transparent text-white
+  focus:border-text-primary
+}
+
+.input {
+  @apply
+  bg-transparent w-28
+  outline-none
+  transition-all ease-in-out duration-200
+}
+
+.input:focus {
+  @apply
+  w-44
+}

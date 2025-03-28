@@ -1,0 +1,79 @@
+.stream-option {
+  @apply 
+  relative 
+  flex justify-center h-36 w-full max-w-[90%] 
+  bg-card rounded-md
+  transition-all ease-in duration-100;
+}
+
+.card {
+  @apply
+  relative
+  flex h-full w-full flex-col
+  items-center justify-center
+}
+
+.card-select-blur {
+  @apply hidden absolute bottom-2 h-10 w-28
+  rounded-t-3xl blur-2xl bg-slate-300;
+}
+
+.indicator-card-select {
+  @apply
+  hidden absolute bottom-[-6px] h-1 w-24 rounded-sm bg-white
+}
+
+.information {
+  @apply
+  flex flex-col
+  gap-8 mr-7
+}
+
+.description {
+  @apply
+  flex flex-col
+  items-start gap-1
+}
+
+.stream-option:hover {
+  @apply
+  scale-105 cursor-pointer
+  shadow-md shadow-[#444054] 
+  bg-gradient-to-tr from-card-focus-from to-card-focus-to
+  border border-[#9F9F9F]
+}
+
+@media (min-width: 640px) {
+  .stream-option {
+    @apply
+    h-[13rem] w-[13rem]
+  }
+}
+
+@media (min-width: 768px) {
+  .stream-option {
+    @apply
+    h-[18rem] w-[13rem]
+  }
+}
+
+@media (min-width: 960px) {
+  .stream-option {
+    @apply
+    h-[23rem] w-[16rem]
+  }
+}
+
+@media (min-width: 1200px) {
+  .stream-option {
+    @apply
+    h-[25rem] w-[18rem]
+  }
+}
+
+@media (min-width: 1536px) {
+  .stream-option {
+    @apply
+    h-[468px] w-[320px]
+  }
+}

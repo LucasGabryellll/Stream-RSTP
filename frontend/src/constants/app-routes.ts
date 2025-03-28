@@ -1,9 +1,5 @@
 export const APP_ROUTER = {
     private: {
-      stream: {
-        name: '/stream',
-      },
-
       unauthorized: {
         name: '/unauthorized'
       }
@@ -11,5 +7,6 @@ export const APP_ROUTER = {
   
     public: {
       login: '/',
+      live_cam: '/cam'
     }
   }

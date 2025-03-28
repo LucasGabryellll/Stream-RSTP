@@ -37,17 +37,17 @@ export function Form() {
 
   async function signIn(dataUser: LoginUserSchema) {
     try {
-      const data = await userLogin({ password: dataUser.password, user: dataUser.login });
+      //const data = await userLogin({ password: dataUser.password, user: dataUser.login });
 
-      if (data?.result) {
-        signInContext({ password: dataUser.password, username: data.result.name, token: data.result.sessionid });
+      navigation.push('/stream');
+      //if (data?.result) {
+        //signInContext({ password: dataUser.password, username: data.result.name, token: data.result.sessionid });
 
-        navigation.push('/stream');
-      }
+      //}
 
-      else {
-        toasty({ message: 'Login ou senha inválido.', type: NotificationType.ERROR });
-      }
+      //else {
+      //  toasty({ message: 'Login ou senha inválido.', type: NotificationType.ERROR });
+      //}
       
     } catch (error: any) {
       toasty({ message: `${error?.response?.data?.message}`, type: NotificationType.ERROR });

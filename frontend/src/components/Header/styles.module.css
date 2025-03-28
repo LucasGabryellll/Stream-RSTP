@@ -1,35 +1,27 @@
-.container-header {
-    @apply flex justify-center h-20 w-full rounded-2xl text-white relative
+.content {
+  @apply
+  flex 
+  w-full items-center justify-between
+  px-3 py-2 bg-color-primary rounded-md
 }
 
-.text-page {
-    @apply
-    font-extrabold text-transparent 
-    text-xl bg-clip-text bg-gradient-to-r from-slate-100 to-slate-50
+.content-option {
+  @apply
+  flex items-center gap-20
 }
 
-.content-gradient {
-    @apply bg-gradient-to-r from-color-primary-gradient to-color-secundary-gradient
+.filters {
+  @apply
+  flex items-center gap-5
 }
 
-.content-information {
-    @apply flex flex-col items-center justify-center
+.description-filter {
+  @apply
+  font-light text-text-secondary
+  transition-all ease-in duration-100
 }
 
-.text-entity {
-    @apply font-medium mb-2 text-[12px]
-}
-
-.text-cnpj {
-    @apply text-sm font-bold text-[12px]
-}
-
-@media (min-width: 640px) {
-    .text-entity {
-        @apply text-[16px]
-    }
-
-    .text-cnpj {
-        @apply text-[18px]
-    }
+.description-filter:hover {
+  @apply
+  font-semibold text-lg
 }

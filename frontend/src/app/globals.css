@@ -8,6 +8,12 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+@layer utilities {
+  .search-cancel-white::-webkit-search-cancel-button {
+    filter: brightness(0) invert(1); /* Faz o "X" ficar branco */
+  }
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

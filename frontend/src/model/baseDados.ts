@@ -6,13 +6,13 @@ const streams = [
   },
   {
     id: 2,
-    description: "ANIMES",
-    url:"https://stmv1.srvif.com/otaku/otaku/chunklist_w776677652.m3u8"
+    description: "SBT",
+    url:"https://stmv1.transmissaodigital.com/cidadeverdenovo/cidadeverdenovo/chunklist_w1366217477.m3u8"
   },
   {
     id: 3,
-    description: "TNT FILMES",
-    url:"https://cdn-1.nxplay.com.br/TNT_TK//tracks-v1a1/mono.m3u8"
+    description: "POP SANTA CLARA",
+    url:"http://192.168.99.13/video/cam_p_farma/index.m3u8"
   },
   {
     id: 4,
@@ -41,4 +41,18 @@ const streams = [
   },
 ]
 
-export { streams };
+const cam_streams = [
+  {
+    id: 1,
+    description: "POP SANTA CLARA",
+    url:"http://localhost:5000/stream/cam_p_farma/index.m3u8",
+  },
+
+  {
+    id: 2,
+    description: "POP SERRA",
+    url:"http://localhost:5000/stream/cam_snu/index.m3u8",
+  },
+]
+
+export { streams, cam_streams };

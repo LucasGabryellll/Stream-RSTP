@@ -1,6 +1,51 @@
 .container {
+  @apply
+  min-h-screen w-full bg-bg-home bg-no-repeat bg-cover
+}
+
+.content-bg {
+  @apply
+  h-full w-full
+  bg-background bg-opacity-80
+}
+
+.featured-vertical {
+  @apply
+  w-full h-full bg-gradient-to-t from-[#000] via-transparent to-transparent
+}
+
+.featured-horizontal {
+  @apply
+  flex w-screen h-screen flex-col
+  bg-gradient-to-r from-[#000] via-transparent to-transparent 
+  p-[5%] gap-10
+}
+
+.cards {
+  @apply
+  flex flex-col gap-8 justify-center w-full px-5
+  items-center
+}
+
+@media (min-width: 640px) {
+  .container {
     @apply
-    flex items-center justify-center h-screen w-full
-    bg-gradient-to-br from-slate-100 from-5% 
-    via-sky-500 via-30% to-gray-900 to-90%
+    overflow-hidden
+  }
+  .cards {
+    @apply
+    flex-wrap h-full px-10 justify-start
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    @apply
+    overflow-hidden
+  }
+
+  .cards {
+    @apply
+    gap-6 flex-row justify-normal w-auto px-0
+  }
 }

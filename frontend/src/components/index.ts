@@ -7,3 +7,4 @@ export * from "./PrivateRouter";
 export * from "./Header";
 export * from "./UserLogged";
 export * from "./ControllerRouter";
+export * from "./HomeComponent"

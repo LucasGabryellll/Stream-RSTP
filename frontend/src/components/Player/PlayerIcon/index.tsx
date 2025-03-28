@@ -1,21 +1,21 @@
 import Image from "next/image";
-import playIcon from '@/assets/play.png';
+import playIcon from '@/assets/play.svg';
 
 import styles from "./styles.module.css";
 
 interface PlayIconProps {
-    onPress: () => void
+  onPress: () => void
 }
 
-function PlayIcon({onPress}: PlayIconProps) {
-    return (
-        <Image
-            className={styles['icon']}
-            src={playIcon}
-            alt='Play'
-            onClick={onPress}
-        />
-    )
+function PlayIcon({ onPress }: PlayIconProps) {
+  return (
+    <Image
+      className={styles['icon']}
+      src={playIcon}
+      alt='Play'
+      onClick={onPress}
+    />
+  )
 }
 
 export { PlayIcon };
